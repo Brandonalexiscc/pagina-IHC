@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(246, 246, 244);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*configuramos el css del div background para dar un estilo de opacidad al dondo que en este caso será una imagen*/
+.background{
+    min-width: 10vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background::before{
+    content: '';
+    background-image: url(clash-of-clans.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    opacity: 0.80;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem; 
+    width: 16rem;
+    display: flex;
+}
